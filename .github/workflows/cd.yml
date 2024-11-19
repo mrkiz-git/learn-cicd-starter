@@ -24,6 +24,7 @@ jobs:
           uses: google-github-actions/auth@v1
           with:
             credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+            
         
         - name: Set GCP Project
           run: gcloud config set project notely-441712
